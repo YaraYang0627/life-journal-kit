@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.env
+.env.*
+*.log
+# User data belongs outside this source tree; these are defense in depth.
+inbox/
+drafts/
+days/
+draft-history/
+reviews/
+site/
+config.json
+
+# Private capture configuration and state
+lark-settings.json
+capture-state/
+simulation-state/
+logs/
+*.pem
+*.key
