@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'"><title>生活地图 · Life Journal Kit</title><style>/*__STYLE__*/</style></head>
+<body>
+<a class="skip" href="#main">跳到日记</a>
+<header><a class="brand" href="#">生活地图<span>LIFE JOURNAL KIT</span></a><span id="privacy">仅在本地浏览</span><button class="quiet" id="guide-button">如何记录</button></header>
+<div id="demo-banner" hidden>虚构演示 · 所有人物、事件与感受均为编写的样例，不来自真实日记。</div>
+<div class="layout">
+<aside><div class="month-switch"><button id="prev" aria-label="上个月">←</button><label><span class="sr-only">选择月份</span><input id="month" type="month" aria-label="选择月份"></label><button id="next" aria-label="下个月">→</button></div><div id="calendar" class="calendar" aria-label="日历"></div><p class="legend"><i></i> 有终稿的日子 · 空白不代表没有经历</p><div class="aside-rule"></div><nav><a href="#days">日子 <span>01</span></a><a href="#feelings">感受 <span>02</span></a><a href="#threads">事情 <span>03</span></a><a href="#review">月度回顾 <span>04</span></a></nav><label class="search-label" for="search">在这个月找一段记忆</label><input id="search" type="search" placeholder="搜索终稿与来源…"><p class="aside-note">留下发生过的事。<br>也保留没有说完的部分。</p></aside>
+<main id="main"><div class="month-heading"><p class="eyebrow" id="period"></p><h1 id="title">生活地图</h1><p id="coverage" aria-live="polite"></p></div>
+<section id="days"><div class="section-heading"><h2>日子</h2><span>从一个具体的片段开始</span></div><div id="day-list"></div></section>
+<section id="feelings"><div class="section-heading"><h2>当时的感受</h2><span>只保留明确说过的话</span></div><div id="feeling-list" class="feeling-grid"></div></section>
+<section id="threads"><div class="section-heading"><h2>事情还在往前</h2><span>计划与未完成事项，按记录日期呈现</span></div><div id="thread-list"></div></section>
+<section id="review"><div class="section-heading"><h2>把这个月放在一起</h2><span id="review-count"></span></div><div id="review-body"></div></section>
+<footer>记录属于你。地图只读，不替你解释生活。<span>Life Journal Kit · 本地基础版</span></footer>
+</main></div>
+<dialog id="reader" aria-labelledby="reader-title"><div class="dialog-top"><span id="reader-date"></span><button id="close-reader" aria-label="关闭日记">关闭 ×</button></div><h2 id="reader-title"></h2><div id="reader-content"></div><div class="reader-nav"><button id="previous-entry">← 上一篇</button><button id="next-entry">下一篇 →</button></div></dialog>
+<dialog id="guide" aria-labelledby="guide-title"><div class="dialog-top"><span>使用这张地图</span><button id="close-guide">关闭 ×</button></div><h2 id="guide-title">先记录，再回来看看。</h2><p>在 Codex 中打开工具源码目录，使用 life-journal 技能补充经历、审阅初稿并确认归档。没有使用 AI 时，也可按 README 的命令保存原话。</p><ol><li>说出日期和今天发生的事。</li><li>补充你明确想记录的感受与计划。</li><li>看过初稿后，说“可以定稿”。</li><li>重新生成地图后，在这里阅读。</li></ol><p>这个页面只读。新增记录后，运行 build 或重新启动 serve，再刷新页面。月度回顾也需要重新生成。</p><p>本地页面不发送数据。若让云端 AI 整理素材，素材会由所选 AI 服务处理；系统同步盘也可能同步本地文件。</p></dialog>
+<script id="journal-data" type="application/json">__JOURNAL_DATA__</script><script>/*__SCRIPT__*/</script>
+</body></html>
