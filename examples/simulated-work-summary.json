@@ -1,0 +1,32 @@
+{
+  "simulation_only": true,
+  "notice": "完全虚构；自定义归一化测试契约，不是飞书原生 HTTP 响应。每次调用提供当时可见的完整分页快照。",
+  "pages": [
+    {
+      "status": "ok",
+      "messages": [
+        {
+          "id": "fictional-message-1",
+          "chat": "fixture-chat",
+          "sender": "fixture-bot",
+          "summary_date": "2026-10-17",
+          "type": "daily_summary",
+          "marker": "[JOURNAL_WORK_SUMMARY]",
+          "title": "工作日结",
+          "created_at": "2026-10-17T22:20:00+08:00",
+          "updated_at": "2026-10-17T22:20:00+08:00",
+          "items": [
+            {
+              "kind": "event",
+              "text": "虚构：完成了展板文字校对。"
+            },
+            {
+              "kind": "plan",
+              "text": "虚构：明天准备修改配图。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
