@@ -1,0 +1,4 @@
+interface:
+  display_name: "生活日记"
+  short_description: "整理主动提供的生活片段，确认归档，生成可追溯的月度回顾和本地生活地图"
+  default_prompt: "使用 $life-journal 帮我整理今天的经历，先给我看初稿，确认后再归档。"
