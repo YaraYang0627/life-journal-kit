@@ -1,4 +1,4 @@
-# Life Journal Kit · 生活日记与地图
+# 日记搭子 · Life Journal Kit
 
 把主动提供的生活片段整理成日记，确认后归档，再回看一个月的生活。
 
